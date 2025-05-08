@@ -1,19 +1,20 @@
-1. Create Web project
+# Create Web project
 
 ```
  composer create-project --prefer-dist laravel/laravel bookManagement
 
 ````
-
-2. Run project
+ # Run project
+ 
 ```
 
 php artisan serve
 
 ```
-3. Olequent Technique
+# Olequent Technique
 
-3.1 Create model
+## Create model
+
 ```
 
 php artisan make:model Book
@@ -53,14 +54,15 @@ class Book extends Model
 ```
 
 
-3.2 Create table Book 
+## Create table Book 
 
 ```
 php artisan make:migration create_books_table
 
 ```
 
-3.2.1 Method Up()
+### Method Up()
+
 create book
 
 ```
@@ -77,16 +79,19 @@ create book
 ```
 
 
-3.2.2 Method down()
+### Method down()
+
 ```
 public function down(): void
     {
         Schema::dropIfExists('books');
     }
 ```
-3.3 Local Seeding data
+
+## Local Seeding data
 
 Update DatabaseSeeder.php
+
 ```
 use Illuminate\Database\Seeder;
 
@@ -118,7 +123,8 @@ class DatabaseSeeder extends Seeder
 
 to create data for Book
 
-3.4 Run
+## Run
+
 ```
 php artisan key:generate
 php artisan migrate
@@ -150,9 +156,9 @@ Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:900
    INFO  Seeding database.  
 ```
 
-4. Model View Controller
+# Model View Controller
 
-4.1 Controller
+## Controller
 
 ```
 php artisan make:Controller BookController
@@ -177,7 +183,8 @@ class BookController extends Controller
 ```
 
 
-4.2 View
+## View
+
 ```
 php artisan make:View Book
 ```
@@ -200,7 +207,8 @@ Simple html
 
 
 
-4.3 Model
+## Model
+
 
 ```
 <?php
@@ -233,12 +241,13 @@ class Book extends Model
 ```
 
 
-4.4 Route
+## Route
 
 ```
 Route::get('book', [BookController::class, 'index']);
 
 ```
 
-5. Ouput
+# Ouput
+
 ![](https://github.com/nglthu/webProjectLaravel/blob/main/img/output.png)
