@@ -6,14 +6,14 @@
 
 ```
 
-# 
+
 # Run Project
  
 ```
 php artisan serve
 ```
 
-# Olequent Technique
+# Eloquent Technique
 
 ## Create model
 
