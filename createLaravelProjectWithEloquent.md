@@ -1,3 +1,4 @@
+
 # Create Web project
 
 ```
@@ -5,13 +6,12 @@
 
 ```
 
- # Run project
+# Run Project
  
 ```
-
 php artisan serve
-
 ```
+
 # Olequent Technique
 
 ## Create model
