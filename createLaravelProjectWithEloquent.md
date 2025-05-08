@@ -252,3 +252,4 @@ Route::get('book', [BookController::class, 'index']);
 # Ouput
 
 ![](https://github.com/nglthu/webProjectLaravel/blob/main/img/output.png)
+<img src='img/output2.png' align='center'> 
